@@ -4,5 +4,5 @@ const endpointHandler = (request, response) => {
 
 module.exports = {
   endpointHandler,
-  requestType,
+  requestType: 'get',
 };
