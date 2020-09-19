@@ -1,11 +1,11 @@
 const items = [
   {
-    id: 1,
+    id: '1',
     title: 'hello world',
     status: false,
   },
   {
-    id: 2,
+    id: '2',
     title: 'dynamic routes',
     status: true,
   },
@@ -27,8 +27,7 @@ function readItem(id) {
   return items.find((item) => item.id === id);
 }
 
-function updateItem(newItem) {
-  const id = newItem.id;
+function updateItem(id, newItem) {
   const index = items.findIndex((item) => item.id === id);
 
   if (index === -1) {
