@@ -1,12 +1,8 @@
-const requestType = require('../request-type').GET;
-const endpointName = '/healthcheck';
-
-const endpoint = (request, response) => {
+const endpointHandler = (request, response) => {
   response.sendStatus(200);
 };
 
 module.exports = {
-  endpoint,
+  endpointHandler,
   requestType,
-  endpointName,
 };
